@@ -6,15 +6,16 @@
         {
             while (true)
             {
-                string texte = ObtenirStringUtilisateur("Entrez une chaîne de caractères en minuscules à vérifier : ");
-                bool estPalindrome = EstPalindrome(texte);
+                string chaineCaracteres = ObtenirStringUtilisateur("Entrez une chaîne de caractères en minuscules à vérifier : ");
+
+                bool estPalindrome = EstPalindrome(chaineCaracteres);
                 if(estPalindrome)
                 {
-                    Console.WriteLine($"{texte} est un palindrôme.");
+                    Console.WriteLine($"{chaineCaracteres} est un palindrôme.");
                 }
                 else
                 {
-                    Console.WriteLine($"{texte} n'est pas un palindrôme.");
+                    Console.WriteLine($"{chaineCaracteres} n'est pas un palindrôme.");
                 }
             }
         }
